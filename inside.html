@@ -387,7 +387,20 @@
 					script.src = "inside.js";
 					script.onload = function() {
 						// error
-						Module.FS.createPreloadedFile(somethingg+'data.pck', null, 'data.pck', true, true, null, null, false, true);
+						//Module.FS.createPreloadedFile(somethingg+'data.pck', null, 'data.pck', true, true, null, null, false, true);
+						    // read text from URL location
+						    var request = new XMLHttpRequest();
+						    request.open('GET', somethingg+'data.pck', true);
+						    request.send(null);
+						    request.onreadystatechange = function () {
+						        if (request.readyState === 4 && request.status === 200) {
+						            var type = request.getResponseHeader('Content-Type');
+						            if (type.indexOf("text") !== 1) {
+						                return request.responseText;
+						            }
+						        }
+						    }
+						
 					};
 					document.body.appendChild(script);
 				}, 1); // delaying even 1ms is enough to allow compilation memory to be reclaimed
