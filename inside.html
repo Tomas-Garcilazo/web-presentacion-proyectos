@@ -385,10 +385,9 @@
 					script.src = "inside.js";
 					script.onload = function() {
 						
-						var root = window.location.href.slice(0, -11);
-						window.alert(root);
-
-						Module.FS.createPreloadedFile('/data.pck', null, 'data.pck', true, true, null, null, false, true);
+						var somethingg = window.location.href.slice(0, -11);
+						window.alert(somethingg);
+						Module.FS.createPreloadedFile(somethingg+'data.pck', null, 'data.pck', true, true, null, null, false, true);
 					};
 					document.body.appendChild(script);
 				}, 1); // delaying even 1ms is enough to allow compilation memory to be reclaimed
