@@ -385,7 +385,7 @@
 
 					var script = document.createElement('script');
 					script.src = "inside.js";
-					script.onload = function() {
+					script.onload = function() {/*
 						// error
 						//Module.FS.createPreloadedFile(somethingg+'data.pck', null, 'data.pck', true, true, null, null, false, true);
 						    // read text from URL location
@@ -401,7 +401,7 @@
 						        }
 						    }
 						
-					};
+					*/};
 					document.body.appendChild(script);
 				}, 1); // delaying even 1ms is enough to allow compilation memory to be reclaimed
 			};
