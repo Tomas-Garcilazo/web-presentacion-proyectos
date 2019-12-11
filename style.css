@@ -1,0 +1,64 @@
+.header{
+  height: 20%;
+  width: 75%;
+  background: darkred;
+  align-self: center;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.body{
+  width: 100%;
+  background:#7B7E80;
+}
+
+#proyectos, #conteiner_muestras {
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: top;
+}
+
+#proyectos{
+  text-align: center;
+  width: 24%;
+  height: 240px;
+  background:#C3C3C3;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.index_link {
+  background:none;
+  border:none;
+}
+
+#conteiner_muestras{
+  text-align: left;  
+  width: 75%;
+  background:#8B8E90;
+
+}
+.footer{
+  height: 300px;
+  background: black;
+  align-self: center;
+  text-align: center;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background:grey;
+    margin:0;
+    padding:0;
+}
+p{
+  color: white;
+  font-family: "Serif", sans-serif;
+}
+
+a{
+  color: black;
+}

@@ -1,1 +1,132 @@
-<meta http-equiv="refresh" content="0; url=inside.html" />
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Historia</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		function esconder_y_mostrar(n){
+			window.scrollTo(0,60);
+			$(".muestra").hide();
+			$("#muestra_"+n).show()
+		}
+	</script>
+</head>|
+<body>
+<div class="header">
+	header
+</div>
+<div class="body">
+
+	<div id="proyectos">
+
+		<h3>Proyectos</h3>
+		<li><button  class="index_link" value="1">proyecto 1</button></li>
+		<li><button  class="index_link" value="2">proyecto 2</button></li>
+		<li><button  class="index_link" value="3">proyecto 3</button></li>
+	</div>
+
+
+
+	<div id ="conteiner_muestras">
+		<div id="muestra_1" class="muestra">
+			<p>Este programa sirve para crear libros interactivos. La diferencia entre los libros y los libros interactivos es que en cierto/s punto/s el lector puede elegir el rumbo que toma la historia.
+			Los libros interactivos son exportados por el programa en formato de pagina html. Estan estilizadas con css y tienen un comando de javascript para agregarle mas suavidad a las transiciones.
+			Se dara un ejemplo al final de la presentacion.
+			Este programa esta hecho con el lenguaje python.</p>
+			<img src="imagenes\python\programa.png" alt="el programa" height="75%" width="75%"><br>
+			<p>El estilo del programa se adapta al estilo en el sistema operativo del usuario.</p>
+			<img src="imagenes\python\estilo_2.png" alt="programa con otro estilo" height="75%" width="75%"><br>
+
+			<p>Para poder usar el programa primero se necesita abrir un proyecto, pero antes de eso veamos por arriba las frunciones que tiene.</p>
+			<br>
+
+			<p>Este es el menu de edicion. Sirve para editar .</p>
+
+			<img src="imagenes\python\menu_edicion.png" alt="menu de edicion"><br>
+			<p>Esta es la interfaz para cambiar de escena</p>
+			<img src="imagenes\python\cambiar_de_escena.png" alt=""><br>
+			<p>esta es la barra para seleccionar la escena siguiente. Como la primera escena solo tiene una opcion la barra aparece desactivada.</p>
+			<img src="imagenes\python\barra_desactivada.png" alt=""><br>
+
+			<p>ahora vamos a el menu</p>
+			<img src="imagenes\python\barra_de_menu.png" alt="barra de menu"><br>
+			<p>Como no tenemos un proyecto guardado abrimos uno nuevo.</p>
+			<img src="imagenes\python\opcion_nuevo.png" alt=""><br>
+			<p>elegimos una carpeta (preferentemente vacia)</p>
+			<img src="imagenes\python\crear_nuevo.png" alt="" height="75%" width="75%"><br>
+			<p>Si vamos a la carpeta podemos ver los archivos generados. Para trabajar con un proyecto ya existente, en lugar de usar el boton "nuevo" se usaria el boton "abrir" y seleccionar el archivo "inicio.dat"</p>
+			<img src="imagenes\python\archivos_generados.png" alt=""><br>
+
+			<p></p>
+			<img src="imagenes\python\escena_actual.png" alt=""><br>
+			<p></p>
+			<img src="imagenes\python\barra_destinos.png" alt=""><br>
+			<p></p>
+			<img src="imagenes\python\pagina_exportada.png" alt="" height="75%" width="75%"><br>
+			<p></p>
+			<img src="imagenes\python\opcion_exportar.png" alt=""><br>
+			<p></p>
+			<img src="imagenes\python\archivos_exportar.png" alt=""><br>
+
+		</div>
+		<div id="muestra_2" class="muestra">
+			<p>Mi segundo proyecto de muestra es un juego de desplazamiento horizontal. A diferencia
+			del proyecto anterior fue hecho usando un editor de texto, para este tube que aprender a usar un programa.
+			Esta hecho con el motor de juegos Godot usando el lenguaje GDscript.</p>
+			<h3>links:</h3>
+			<a href="https://github.com/Tomas-Garcilazo/Inside-xirtam/tree/master/inside_XIRTAM/scripts">
+				El codigo en mi Github.</a>
+			<br>
+			<a href="https://gamejolt.com/games/Inside-XIRTAM/454426">
+				El juego publicado en GameJolt.
+			</a>
+			<br><br>
+			<p> Una imagen del juego: </p>
+			<img src="imagenes\juego\2.png" height="50%" width="50%">
+			
+
+
+
+		</div>
+		<div id="muestra_3" class="muestra">
+			<p>Mi tercer proyecto de muestra es esta misma pagina. Utiliza javascript, html y css. Todo lo que se ve en ella fue un trabajo hecho por mi.<br>
+			</p>
+			<p>Para finalizar me gustaria comunicar al lector que lo que busco con estas 3 demostraciones de 
+			proyectos no es destacar el conocimiento de las tecnologias utilizadas, sino demostrar una 
+			variedad de cualidades personales como:
+			</p>
+			<p>capacidad adaptativa: son 3 proyectos muy diferentes entre si y que emplean diferentes tecnologias
+			<br>
+			compromiso: Hacer toda esta demostracion requiere considerable tiempo y principalmente dedicacion.
+			<br>
+			
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	footer
+</div>
+</body>
+
+<script type="text/javascript">
+	$(".index_link").click(function(){
+		var a = $(this).val();
+		if (a != ""){
+			esconder_y_mostrar(a);
+		}
+	    //your JS here
+	});
+		$(".muestra").hide();
+		$("#muestra_1").show();
+</script>
+
+</html>
