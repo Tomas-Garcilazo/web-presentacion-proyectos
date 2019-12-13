@@ -10,30 +10,28 @@ mios:
 00242D azul oscuro
 */
 .header{
-  height: 116px;
-  width: 920px;
+  width: 72vw;
+  height: 20vh;
   background: #2D5F5D;
   text-align: center;
   margin: 0 auto;
   padding:0;
+  font-size: 3vmin;
 }
 
 #pre-body{
-  width: 55%;
-  height: 74px;
+  width: 55vw;
+  height: 14vh;
   background: #595B78;
   text-align: center;
+  font-size: 5vh;
   margin: auto;
-  padding:0;
-  font-size: 190%;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
-  margin-top: 15px;
-  margin-bottom: 40px;
-  /*
-  line-height: 64px;
-  */
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+
+  margin-top: 3vmin;
+  margin-bottom: 8vmin;
 }
 
 .body{
@@ -49,10 +47,14 @@ mios:
 #proyectos > h3{
  text-align: center;
 }
+#proyectos > li{
+  text-align: left;
+  text-indent: 10%;
+}
+
 #proyectos{
-  text-align: justify;
-  width: 23%;
-  height: 240px;
+  width: 23vw;
+  height: 40vh;
   background:#C3C3C3;
 
   position: -webkit-sticky;
@@ -74,15 +76,16 @@ mios:
   font-size: 35px;
 }
 .footer{
-  height: 300px;
+  height: 45vh;
+  width: 98vw;
   background: black;
   align-self: center;
   text-align: center;
 }
 
 body, html {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: #022140;
     margin:0;
     padding:0;
