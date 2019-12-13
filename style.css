@@ -71,7 +71,15 @@ mios:
   background:#265077;
   position: right;
 }
+.muestra{
+  margin-bottom: 20vh;
+  padding: 2%;
+}
 
+.muestra > p{
+  text-indent: 3%;
+
+}
 .titulo_proyecto{
   font-size: 35px;
 }
