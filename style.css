@@ -44,6 +44,12 @@ mios:
 	margin: 0 auto;
 	vertical-align: top;
 }
+#proyectos > li > button{
+  background: none;
+  border: none;
+  text-decoration: underline;
+  text-align: left;
+}
 #proyectos > h3{
  text-align: center;
 }
@@ -85,7 +91,7 @@ mios:
 }
 .footer{
   height: 45vh;
-  width: 98vw;
+  width: 100vw;
   background: black;
   align-self: center;
   text-align: center;
