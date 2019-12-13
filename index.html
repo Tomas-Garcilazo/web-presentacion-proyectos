@@ -9,9 +9,9 @@
 
 	<script type="text/javascript">
 		function esconder_y_mostrar(n){
-			window.scrollTo(0,60);
 			$(".muestra").hide();
 			$("#muestra_"+n).show()
+			window.location.hash = "#muestra_"+n;
 		}
 	</script>
 </head>|
@@ -33,8 +33,8 @@ A la izquierda puede ver la lista de proyectos.
 		
 		<li><button class="index_link" value="1">1 Programa de escritorio</button></li>
 		<li><button class="index_link" value="2">2 Videojuego</button></li>
-		<li><button class="index_link" value="3">3 Pagina web</button></li>
-		<li><button class="index_link" value=""> Más proximamente...</a></li>
+		<li><button class="index_link" value="3">3 página web</button></li>
+		<li><button class="index_link" value=""> Más próximamente...</a></li>
 		
 		<!--
 		<li><a class="index_link" href="#muestra_1">1 Programa de escritorio</a></li>
@@ -49,24 +49,22 @@ A la izquierda puede ver la lista de proyectos.
 	<div id ="conteiner_muestras">
 		<div id="muestra_1" class="muestra">
 			<h class="titulo_proyecto">1 Programa de escritorio</h>
-			<p>Este programa sirve para crear libros interactivos.
-			Los libros interactivos son exportados por el programa en formato de pagina html.
-			Estan estilizados con css y tienen un comando de javascript para agregarle mas
-			suavidad a las transiciones entre paginas.
+			<p>Los libros interactivos son exportados por el programa en formato de página html. 
+			Están estilizados con css y tienen un comando de javascript para agregarle más suavidad 
+			a las transiciones entre páginas. 
+			El programa está hecho con el lenguaje python.</p>
 
-			El programa esta hecho con el lenguaje python.</p>
-
-			<p>La apariciencia de el programa se adapta a la aprariencia del SO del usuario.</p>
+			<p>La apariencia del programa se adapta a la apariencia del SO del usuario.</p>
 			<img src="imagenes\python\programa.png" alt="el programa" height="49%" width="49%">
 			
 			<img src="imagenes\python\estilo_2.png" alt="programa con otro estilo" height="49%" width="49%"><br>
 
-			<p>Los libros exportados pueden verse sin accesos a internet. Esta es una imagen de una pagina de ejemplo.</p>
+			<p>Los libros exportados pueden verse sin accesos a internet. Esta es una imagen de una página de ejemplo.</p>
 			<img src="imagenes\python\pagina_exportada.png" alt="" height="60%" width="60%"><br>
 			<p>
-			Como el libro es exportado en formato html, tambien puede publicarse como una pagina web estatica sin
-			necesidad de agregarle nada mas.
-			Puede ver un ejemplo haciendo clic <a href="libro_ejemplo/index.html"> aqui </a>
+			Como el libro es exportado en formato html, también puede publicarse como una página web 
+			estática sin necesidad de agregarle nada más. Puede ver un ejemplo haciendo 
+			clic <a href="libro_ejemplo/index.html">aquí</a>.
 			</p>
 
 			<!--<h3>A continuacion se explican las funciones de manera general del programa, es algo extensa asi que si no tiene tiempo le recomendaria continuar viendo los otros proyectos. </h3>-->
@@ -86,8 +84,8 @@ A la izquierda puede ver la lista de proyectos.
 			<img src="imagenes\python\opcion_nuevo.png" alt=""><br>
 			<p>elegimos una carpeta (preferentemente vacia)</p>
 			<img src="imagenes\python\crear_nuevo.png" alt="" height="75%" width="75%"><br>-->
-			<p>Cuando se crea un proyecto nuevo, se generan los siguientes archivos.
-			si se quiere abrir el proyecto solo se necesita seleccionar el archivo "inicio.dat"</p>
+			<p>Cuando se crea un proyecto nuevo, se generan los siguientes archivos. 
+			Si se quiere abrir el proyecto solo se necesita seleccionar el archivo "inicio.dat".</p>
 			<img src="imagenes\python\archivos_generados.png" alt="" height="25%" width="25%"><br>
 			<!--
 			<p></p>
@@ -98,25 +96,25 @@ A la izquierda puede ver la lista de proyectos.
 			<img src="imagenes\python\opcion_exportar.png" alt=""><br>
 			<p></p>
 			-->
-			<p>Y cuando se exporta se generan estos. Se puede leer el libro sin conexion a internet
+			<p>Y cuando se exporta se generan estos. Se puede leer el libro sin conexión a internet 
 			simplemente abriendo el archivo "iniciar".</p>
 			<img src="imagenes\python\archivos_exportar.png" alt=""><br>
 
 		</div>
 		<div id="muestra_2" class="muestra">
 			<h class="titulo_proyecto"> 2 Videojuego </h>
-			<p>Mi segundo proyecto de muestra es un juego de desplazamiento horizontal. A diferencia
-			del proyecto anterior fue hecho usando un editor de texto, para este tube que aprender a usar un programa.
-			Esta hecho con el motor de juegos Godot usando el lenguaje GDscript.</p>
+			<p>Mi segundo proyecto de muestra es un juego de desplazamiento horizontal. A diferencia 
+			del proyecto anterior fue hecho usando un editor de texto, para este tuve que aprender a 
+			usar un programa. Esta hecho con el motor de juegos Godot usando el lenguaje GDscript.</p>
 			<h3>links:</h3>
 			<a href="https://github.com/Tomas-Garcilazo/Inside-xirtam/tree/master/inside_XIRTAM/scripts">
-				El codigo en mi Github.</a>
+				El código en mi Github.</a>
 			<br>
 			<a href="https://gamejolt.com/games/Inside-XIRTAM/454426">
 				El juego publicado en GameJolt.
 			</a>
 			<br><br>
-			<p> Imagenes del juego: </p>
+			<p>Imágenes del juego:</p>
 			<img src="imagenes\juego\1.png" height="50%" width="50%">
 			<!--<img src="imagenes\juego\2.png" height="50%" width="50%">-->
 			<img src="imagenes\juego\3.png" height="50%" width="50%">
@@ -124,27 +122,34 @@ A la izquierda puede ver la lista de proyectos.
 
 		</div>
 		<div id="muestra_3" class="muestra">
-			<h class="titulo_proyecto"> 3 Pagina web </h>
-			<p>Mi tercer proyecto de muestra es esta misma pagina. 
-			La pagina esta hospedada en <a href="https://www.netlify.com"> https://www.netlify.com </a>. 
-			Utiliza javascript, html y css. Todo lo que se ve en ella fue un trabajo hecho por mi.
+			<h class="titulo_proyecto"> 3 página web </h>
+			<p>Mi tercer proyecto de muestra es esta misma página que está viendo. 
+			La página esta hospedada en <a href="https://www.netlify.com"> https://www.netlify.com</a>. 
+			Utiliza javascript, html y css. Todo lo que se ve en ella fue un trabajo hecho por mí.
 			</p>
 			<br>
 			<div id="finalizar">
 				<h2> Para finalizar: </h2>
-				<p>Me gustaria comunicar al lector que lo que busco con estas 3 demostraciones de 
-				proyectos no es destacar el conocimiento de las tecnologias utilizadas, sino demostrar una 
-				variedad de cualidades personales como:
-				
+				<p>Me gustaría comunicar al lector que lo que busco con estas 3 demostraciones de 
+				proyectos no es destacar los conocimientos de las tecnologías utilizadas, sino una 
+				variedad de cualidades personales que considero más importantes como:
 				</p>
-				<p>capacidad adaptativa: son 3 proyectos muy diferentes entre si y emplean diferentes tecnologias.
+				<p>Capacidad adaptativa: son 3 proyectos muy diferentes entre si y emplean diferentes tecnologías. 
 				Siempre estoy dispuesto a aprender y/o capacitarme.
 				<br>
-				compromiso: Hacer toda esta demostración requiere un considerable tiempo y bastante dedicación.
+				Compromiso: Hacer toda esta demostración requiere considerable tiempo y dedicación.
 				<br>
-				Proactividad: Puedo no tener experiencia laboral en el campo, pero no me quede esperando e hize todo esto para aumentar mis chances.
+				Proactividad: Puedo no tener experiencia laboral en el campo, pero no me quede esperando e hice todo 
+				esto para aumentar mis chances.
+
+
+				<br><br>
+				Esos fueron todos los proyectos completados que tengo para mostrar por ahora. 
+				Hasta acá llega mi presentación, muchas gracias por su tiempo.
+				</p>
+
 			</div>
-	</p></div>
+	</div>
 		<br><br>
 		<br><br>
 		<br><br>
