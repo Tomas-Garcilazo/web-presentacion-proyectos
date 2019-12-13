@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<title>Historia</title>
 	<link rel="stylesheet" href="style.css"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+	<script src="Jquery/jquery-1.6.3.min.js"></script>
 
 	<script type="text/javascript">
 		function esconder_y_mostrar(n){
@@ -16,48 +17,77 @@
 </head>|
 <body>
 <div class="header">
-	header
+
+	<h1>Presentacion de proyectos</h1>
+	<h2> Tomas Garcilazo</h2>
+
+</div>
+<div id="pre-body">
+<div id="pre-body-texto">
+Hola, bienvenido a mi presentacion de proyectos. <br>
+A la izquierda puede ver la lista de proyectos.
+</div>
 </div>
 <div class="body">
-
 	<div id="proyectos">
 
 		<h3>Proyectos</h3>
+		<!--
 		<li><button  class="index_link" value="1">proyecto 1</button></li>
 		<li><button  class="index_link" value="2">proyecto 2</button></li>
 		<li><button  class="index_link" value="3">proyecto 3</button></li>
+		-->
+
+		<li><a class="index_link" href="#muestra_1">proyecto 1</a></li>
+		<li><a class="index_link" href="#muestra_2">proyecto 2</a></li>
+		<li><a class="index_link" href="#muestra_3">proyecto 3</a></li>
 	</div>
 
 
 
 	<div id ="conteiner_muestras">
 		<div id="muestra_1" class="muestra">
-			<p>Este programa sirve para crear libros interactivos. La diferencia entre los libros y los libros interactivos es que en cierto/s punto/s el lector puede elegir el rumbo que toma la historia.
-			Los libros interactivos son exportados por el programa en formato de pagina html. Estan estilizadas con css y tienen un comando de javascript para agregarle mas suavidad a las transiciones.
-			Se dara un ejemplo al final de la presentacion.
-			Este programa esta hecho con el lenguaje python.</p>
-			<img src="imagenes\python\programa.png" alt="el programa" height="75%" width="75%"><br>
-			<p>El estilo del programa se adapta al estilo en el sistema operativo del usuario.</p>
-			<img src="imagenes\python\estilo_2.png" alt="programa con otro estilo" height="75%" width="75%"><br>
+			<h class="titulo_proyecto"> Proyecto 1 </h>
+			<p>Este programa sirve para crear libros interactivos.
+			Los libros interactivos son exportados por el programa en formato de pagina html.
+			Estan estilizados con css y tienen un comando de javascript para agregarle mas
+			suavidad a las transiciones entre paginas.
 
-			<p>Para poder usar el programa primero se necesita abrir un proyecto, pero antes de eso veamos por arriba las frunciones que tiene.</p>
-			<br>
+			El programa esta hecho con el lenguaje python.</p>
 
-			<p>Este es el menu de edicion. Sirve para editar .</p>
+			<p>La apariciencia de el programa se adapta a la aprariencia del SO del usuario.</p>
+			<img src="imagenes\python\programa.png" alt="el programa" height="49%" width="49%">
+			
+			<img src="imagenes\python\estilo_2.png" alt="programa con otro estilo" height="49%" width="49%"><br>
+
+			<p>Los libros exportados pueden verse sin accesos a internet. Esta es una imagen de una pagina de ejemplo.</p>
+			<img src="imagenes\python\pagina_exportada.png" alt="" height="60%" width="60%"><br>
+			<p>
+			Como el libro es exportado en formato html, tambien puede publicarse como una pagina web estatica sin
+			necesidad de agregarle nada mas.
+			Puede ver un ejemplo haciendo clic <a href="libro_ejemplo/index.html"> aqui </a>
+			</p>
+
+			<!--<h3>A continuacion se explican las funciones de manera general del programa, es algo extensa asi que si no tiene tiempo le recomendaria continuar viendo los otros proyectos. </h3>-->
+			<h3>BLABLALBA</h3>
+
+			<p><!--Para poder usar el programa primero se necesita abrir un proyecto, pero antes de eso veamos por arriba las frunciones que tiene.--></p>
+
+			<p><!--Este es el menu de edicion. Si se usa el boton "editar" se abrira el texto de esa pagina en el editor por defecto del usuario.--></p>
 
 			<img src="imagenes\python\menu_edicion.png" alt="menu de edicion"><br>
-			<p>Esta es la interfaz para cambiar de escena</p>
+			<p><!--Esta es la interfaz para cambiar de pagina--></p>
 			<img src="imagenes\python\cambiar_de_escena.png" alt=""><br>
-			<p>esta es la barra para seleccionar la escena siguiente. Como la primera escena solo tiene una opcion la barra aparece desactivada.</p>
+			<p><!--esta es la barra para seleccionar la pagina siguiente. Como la primera pagina solo tiene una opcion la barra aparece desactivada.--></p>
 			<img src="imagenes\python\barra_desactivada.png" alt=""><br>
 
-			<p>ahora vamos a el menu</p>
+			<p><!--ahora vamos a el menu--></p>
 			<img src="imagenes\python\barra_de_menu.png" alt="barra de menu"><br>
-			<p>Como no tenemos un proyecto guardado abrimos uno nuevo.</p>
+			<p><!--Como no tenemos un proyecto guardado abrimos uno nuevo.--></p>
 			<img src="imagenes\python\opcion_nuevo.png" alt=""><br>
-			<p>elegimos una carpeta (preferentemente vacia)</p>
+			<p><!--elegimos una carpeta (preferentemente vacia)--></p>
 			<img src="imagenes\python\crear_nuevo.png" alt="" height="75%" width="75%"><br>
-			<p>Si vamos a la carpeta podemos ver los archivos generados. Para trabajar con un proyecto ya existente, en lugar de usar el boton "nuevo" se usaria el boton "abrir" y seleccionar el archivo "inicio.dat"</p>
+			<p><!--Si vamos a la carpeta podemos ver los archivos generados. Para trabajar con un proyecto ya existente, en lugar de usar el boton "nuevo" se usaria el boton "abrir" y seleccionar el archivo "inicio.dat"--></p>
 			<img src="imagenes\python\archivos_generados.png" alt=""><br>
 
 			<p></p>
@@ -65,14 +95,13 @@
 			<p></p>
 			<img src="imagenes\python\barra_destinos.png" alt=""><br>
 			<p></p>
-			<img src="imagenes\python\pagina_exportada.png" alt="" height="75%" width="75%"><br>
-			<p></p>
 			<img src="imagenes\python\opcion_exportar.png" alt=""><br>
 			<p></p>
 			<img src="imagenes\python\archivos_exportar.png" alt=""><br>
 
 		</div>
 		<div id="muestra_2" class="muestra">
+			<h class="titulo_proyecto"> Proyecto 2 </h>
 			<p>Mi segundo proyecto de muestra es un juego de desplazamiento horizontal. A diferencia
 			del proyecto anterior fue hecho usando un editor de texto, para este tube que aprender a usar un programa.
 			Esta hecho con el motor de juegos Godot usando el lenguaje GDscript.</p>
@@ -92,25 +121,34 @@
 
 		</div>
 		<div id="muestra_3" class="muestra">
-			<p>Mi tercer proyecto de muestra es esta misma pagina. La pagina esta hospedada en <a href="https://www.netlify.com"> https://www.netlify.com </a>. Utiliza javascript, html y css. Todo lo que se ve en ella fue un trabajo hecho por mi.
-			
-			<br>
+			<h class="titulo_proyecto"> Proyecto 3 </h>
+			<p>Mi tercer proyecto de muestra es esta misma pagina. 
+			La pagina esta hospedada en <a href="https://www.netlify.com"> https://www.netlify.com </a>. 
+			Utiliza javascript, html y css. Todo lo que se ve en ella fue un trabajo hecho por mi.
 			</p>
-			<p>Para finalizar me gustaria comunicar al lector que lo que busco con estas 3 demostraciones de 
+		</div>
+			<br>
+
+		<div id="finalizar">
+			<h2> Para finalizar: </h2>
+			<p>Me gustaria comunicar al lector que lo que busco con estas 3 demostraciones de 
 			proyectos no es destacar el conocimiento de las tecnologias utilizadas, sino demostrar una 
 			variedad de cualidades personales como:
-			</p>
-			<p>capacidad adaptativa: son 3 proyectos muy diferentes entre si y que emplean diferentes tecnologias
-			<br>
-			compromiso: Hacer toda esta demostracion requiere considerable tiempo y principalmente dedicacion.
-			<br>
 			
-
-
-
-
-
+			</p>
+			<p>capacidad adaptativa: son 3 proyectos muy diferentes entre si y emplean diferentes tecnologias.
+			Siempre estoy dispuesto a aprender y/o capacitarme.
+			<br>
+			compromiso: Hacer toda esta demostracion requiere un considerable tiempo y bastante dedicacion.
+			<br>
+			Proactividad: Puedo no tener experiencia laboral en el campo, pero no me quede esperando e hize todo esto para aumentar mis chances.
 		</div>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
 	</div>
 </div>
 
@@ -118,7 +156,7 @@
 	footer
 </div>
 </body>
-
+<!--
 <script type="text/javascript">
 	$(".index_link").click(function(){
 		var a = $(this).val();
@@ -130,5 +168,5 @@
 		$(".muestra").hide();
 		$("#muestra_1").show();
 </script>
-
+-->
 </html>
