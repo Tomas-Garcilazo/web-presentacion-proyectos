@@ -46,9 +46,11 @@ mios:
 	margin: 0 auto;
 	vertical-align: top;
 }
-
+#proyectos > h3{
+ text-align: center;
+}
 #proyectos{
-  text-align: center;
+  text-align: justify;
   width: 23%;
   height: 240px;
   background:#C3C3C3;
